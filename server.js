@@ -10,7 +10,8 @@ app.get("/", (req, res) => {
 })
 
 app.get("/drinks", (req, res) => {
-  res.send(drinks)
+  //res.send(drinks);
+  res.render("index.ejs")
 })
 
 //Set app to listen to port and include a console.log() to tell when server is running
