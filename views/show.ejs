@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gitPub</title>
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: tomato;
+    }
+
+    h2 {
+      color: darkblue;
+      margin-left: 10%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+      color: dodgerblue;
+      margin-left: 10%;
+    }
+
+    img {
+      margin-left: 10%;
+    }
+
+    a:link {
+      color: darkblue;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 10%;
+    }
+
+    a:visited {
+      color: cornflowerblue
+    }
+
+    a:hover {
+      color: coral
+    }
+
+    a:active {
+      color: aquamarine
+    }
+  </style>
+</head>
+
+<body>
+  <h1>At foo bar</h1>
+  <h2>
+    <%= drinks[0].name %>
+  </h2>
+  <img src=<%=drinks[0].image%> alt="Cruddy_Mary"><br>
+  <a href="/drinks">Back</a>
+  <h3>
+    <%= drinks[0].price %>
+  </h3>
+</body>
+
+</html>
