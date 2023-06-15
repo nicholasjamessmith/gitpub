@@ -11,7 +11,9 @@ app.get("/", (req, res) => {
 
 app.get("/drinks", (req, res) => {
   //res.send(drinks);
-  res.render("index.ejs")
+  //console.log(drinks)
+  //Data is sent to the EJS file via the second argument of res.render
+  res.render("index.ejs", {drinks})
 })
 
 //Set app to listen to port and include a console.log() to tell when server is running
