@@ -55,13 +55,13 @@
 <body>
   <h1>At foo bar</h1>
   <h2>
-    <%= drinks[0].name %>
+    <%= drink.name %>
   </h2>
-  <img src=<%=drinks[0].image%> alt="Cruddy_Mary"><br>
-  <a href="/drinks">Back</a>
+  <img src="<%= drink.image %>.png" alt="drinkimg">
   <h3>
-    <%= drinks[0].price %>
+    Price: <%= drink.price %>
   </h3>
+  <a href="/drinks">Back to list of drinks</a>
 </body>
 
 </html>

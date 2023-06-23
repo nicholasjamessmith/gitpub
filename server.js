@@ -18,8 +18,10 @@ app.get("/drinks", (req, res) => {
 
 app.get("/drinks/:id", (req, res) => {
   //res.send(req.params.id)
-  res.render("show.ejs", { drinks }
-  )
+  res.render("show.ejs", {
+    drink: drinks[req.params.id]
+  })
+  //console.log(req.params.id)
 })
 
 //Set app to listen to port and include a console.log() to tell when server is running
